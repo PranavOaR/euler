@@ -343,7 +343,7 @@ const ShaderMaterial = ({
     });
 
     return materialObject;
-  }, [size.width, size.height, source]);
+  }, [size.width, size.height, source, getUniforms]);
 
   return (
     <mesh ref={ref as any}>
@@ -732,7 +732,7 @@ export const SignInPage = ({ className }: SignInPageProps) => {
                   >
                     <div className="space-y-1">
                       <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl">Welcome to Euler!</h1>
-                      <p className="text-xl md:text-2xl text-white/90 leading-relaxed drop-shadow-lg">You're all set</p>
+                      <p className="text-xl md:text-2xl text-white/90 leading-relaxed drop-shadow-lg">You&apos;re all set</p>
                     </div>
                     
                     <motion.div 

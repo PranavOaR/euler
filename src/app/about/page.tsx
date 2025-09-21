@@ -50,7 +50,7 @@ export default function AboutPage() {
                 </p>
                 
                 <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light">
-                  By combining cutting-edge machine learning with robotic precision, Euler provides a seamless platform for intelligent financial insights and automation, redefining what's possible in the market.
+                  By combining cutting-edge machine learning with robotic precision, Euler provides a seamless platform for intelligent financial insights and automation, redefining what&apos;s possible in the market.
                 </p>
               </div>
               

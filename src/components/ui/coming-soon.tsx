@@ -222,10 +222,10 @@ const ComingSoon: React.FC<ComingSoonProps> = ({
                       >
                         <div className="text-2xl mb-2">🎉</div>
                         <h3 className="font-semibold text-white mb-1">
-                          You're on the list!
+                          You&apos;re on the list!
                         </h3>
                         <p className="text-sm text-white/60">
-                          We'll notify you as soon as we launch.
+                          We&apos;ll notify you as soon as we launch.
                         </p>
                       </motion.div>
                     )}

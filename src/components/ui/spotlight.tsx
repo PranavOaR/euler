@@ -62,7 +62,7 @@ export function Spotlight({
   }, [parentElement, handleMouseMove]);
 
   return (
-    <motion.div
+    <div
       ref={containerRef}
       className={cn(
         'pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_80%)] blur-xl transition-opacity duration-200',
@@ -73,9 +73,9 @@ export function Spotlight({
       style={{
         width: `${size}px`,
         height: `${size}px`,
-        left: spotlightLeft,
-        top: spotlightTop,
-      } as React.CSSProperties}
+        left: `${spotlightLeft.get()}px`,
+        top: `${spotlightTop.get()}px`,
+      }}
     />
   );
 }
