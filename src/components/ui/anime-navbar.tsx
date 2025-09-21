@@ -57,10 +57,10 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
   if (!mounted) return null
 
   return (
-    <div className="fixed top-5 left-0 right-0 z-[9999]">
-      <div className="flex justify-center pt-6">
+    <div className="fixed top-3 left-0 right-0 z-[9999] px-4">
+      <div className="flex justify-center">
         <motion.div 
-          className="flex items-center gap-3 bg-black/50 border border-white/10 backdrop-blur-lg py-2 px-2 rounded-full shadow-lg relative"
+          className="flex items-center gap-1 md:gap-3 bg-black/50 border border-white/10 backdrop-blur-lg py-2 px-2 rounded-full shadow-lg relative max-w-full overflow-hidden"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -96,7 +96,7 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
                 onMouseEnter={() => setHoveredTab(item.name)}
                 onMouseLeave={() => setHoveredTab(null)}
                 className={cn(
-                  "relative cursor-pointer text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300",
+                  "relative cursor-pointer text-sm font-semibold px-3 md:px-6 py-2 md:py-3 rounded-full transition-all duration-300 flex items-center justify-center min-w-0",
                   "text-white/70 hover:text-white",
                   isActive && "text-white"
                 )}
@@ -138,11 +138,11 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
                   {item.name}
                 </motion.span>
                 <motion.span 
-                  className="md:hidden relative z-10"
-                  whileHover={{ scale: 1.2 }}
+                  className="md:hidden relative z-10 flex items-center justify-center"
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <Icon size={18} strokeWidth={2.5} />
+                  <Icon size={16} strokeWidth={2.5} />
                 </motion.span>
           
                 <AnimatePresence>
@@ -161,11 +161,11 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
           
           {/* Conditional Login/Signup or Logout button */}
           {!loading && (
-            <div className="flex items-center gap-2 ml-2 pl-2 border-l border-white/20">
+            <div className="flex items-center gap-1 md:gap-2 ml-1 md:ml-2 pl-1 md:pl-2 border-l border-white/20">
               {user ? (
                 <button
                   onClick={handleSignOut}
-                  className="relative px-4 py-2 text-sm font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-colors overflow-hidden group"
+                  className="relative px-2 md:px-4 py-2 text-xs md:text-sm font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-colors overflow-hidden group whitespace-nowrap"
                 >
                   <span className="relative z-10">Logout</span>
                   <div className="absolute inset-0 -top-full group-hover:top-full transition-all duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent transform skew-x-12"></div>
@@ -173,9 +173,10 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
               ) : (
                 <Link
                   href="/login"
-                  className="relative px-4 py-2 text-sm font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-colors overflow-hidden group"
+                  className="relative px-2 md:px-4 py-2 text-xs md:text-sm font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-colors overflow-hidden group whitespace-nowrap"
                 >
-                  <span className="relative z-10">Login/Signup</span>
+                  <span className="relative z-10 hidden sm:inline">Login/Signup</span>
+                  <span className="relative z-10 sm:hidden">Login</span>
                   <div className="absolute inset-0 -top-full group-hover:top-full transition-all duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent transform skew-x-12"></div>
                 </Link>
               )}
