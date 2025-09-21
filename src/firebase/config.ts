@@ -3,14 +3,15 @@ import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDA4wfcXqt-JAvPF2i2y948NLceP1wyfxk",
-  authDomain: "euler-34c56.firebaseapp.com",
-  projectId: "euler-34c56",
-  storageBucket: "euler-34c56.firebasestorage.app",
-  messagingSenderId: "959714192194",
-  appId: "1:959714192194:web:a96dd65d664df715c2b6db",
-  measurementId: "G-ZHKZPLHYQV"
+  apiKey: "AIzaSyA0lLDLPzTfkwzukbDTNJixw8oQDUfqvsU",
+  authDomain: "euler-f5167.firebaseapp.com",
+  projectId: "euler-f5167",
+  storageBucket: "euler-f5167.firebasestorage.app",
+  messagingSenderId: "872554004392",
+  appId: "1:872554004392:web:9b896049200b019f9e679d",
+  measurementId: "G-MCDV8MJ1HK"
 };
 
 // Initialize Firebase
