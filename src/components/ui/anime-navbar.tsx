@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 import { ShimmerButton } from "@/components/ui/shimmer-button"
 import { useAuthStatus } from "@/context/AuthContext"
 import { signOutUser } from "@/hooks/useAuth"
+import ThemeToggle from "@/components/ui/theme-toggle"
 
 interface NavItem {
   name: string
@@ -159,6 +160,11 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
             )
           })}
           
+          {/* Theme Toggle */}
+          <div className="flex items-center px-1 md:px-2">
+            <ThemeToggle />
+          </div>
+          
           {/* Conditional Login/Signup or Logout button */}
           {!loading && (
             <div className="flex items-center gap-1 md:gap-2 ml-1 md:ml-2 pl-1 md:pl-2 border-l border-white/20">
@@ -187,3 +193,5 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
     </div>
   )
 }
+
+export default AnimeNavBar

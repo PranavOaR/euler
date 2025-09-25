@@ -18,9 +18,9 @@ const features = [
     href: "#prediction",
     cta: "Learn more",
     background: (
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/40">
-        <div className="absolute top-4 right-4 w-32 h-32 bg-gray-700/20 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-4 left-4 w-24 h-24 bg-gray-600/20 rounded-full blur-xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 to-purple-100/50 dark:from-gray-800/30 dark:to-gray-900/40">
+        <div className="absolute top-4 right-4 w-32 h-32 bg-blue-200/30 dark:bg-gray-700/20 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-4 left-4 w-24 h-24 bg-purple-200/30 dark:bg-gray-600/20 rounded-full blur-xl"></div>
       </div>
     ),
     className: "lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:col-end-2",
@@ -32,9 +32,9 @@ const features = [
     href: "#simulation",
     cta: "Try simulation",
     background: (
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/40">
-        <div className="absolute top-8 right-8 w-20 h-20 bg-gray-700/20 rounded-lg rotate-12 blur-sm"></div>
-        <div className="absolute bottom-8 left-8 w-16 h-16 bg-gray-600/20 rounded-lg -rotate-12 blur-sm"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-green-100/50 to-teal-100/50 dark:from-gray-800/30 dark:to-gray-900/40">
+        <div className="absolute top-8 right-8 w-20 h-20 bg-green-200/30 dark:bg-gray-700/20 rounded-lg rotate-12 blur-sm"></div>
+        <div className="absolute bottom-8 left-8 w-16 h-16 bg-teal-200/30 dark:bg-gray-600/20 rounded-lg -rotate-12 blur-sm"></div>
       </div>
     ),
     className: "lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-4",
@@ -46,9 +46,9 @@ const features = [
     href: "#dashboard",
     cta: "View dashboard",
     background: (
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/40">
-        <div className="absolute top-6 left-6 w-28 h-28 bg-gray-700/20 rounded-full blur-xl"></div>
-        <div className="absolute bottom-6 right-6 w-20 h-20 bg-gray-600/20 rounded-full blur-lg"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-100/50 to-red-100/50 dark:from-gray-800/30 dark:to-gray-900/40">
+        <div className="absolute top-6 left-6 w-28 h-28 bg-orange-200/30 dark:bg-gray-700/20 rounded-full blur-xl"></div>
+        <div className="absolute bottom-6 right-6 w-20 h-20 bg-red-200/30 dark:bg-gray-600/20 rounded-full blur-lg"></div>
       </div>
     ),
     className: "lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3 dashboard-card",
@@ -60,9 +60,9 @@ const features = [
     href: "#risk-management",
     cta: "Manage risk",
     background: (
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/40">
-        <div className="absolute top-4 left-4 w-24 h-24 bg-gray-700/20 rounded-full blur-lg"></div>
-        <div className="absolute bottom-4 right-4 w-32 h-32 bg-gray-600/20 rounded-full blur-2xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/50 to-violet-100/50 dark:from-gray-800/30 dark:to-gray-900/40">
+        <div className="absolute top-4 left-4 w-24 h-24 bg-indigo-200/30 dark:bg-gray-700/20 rounded-full blur-lg"></div>
+        <div className="absolute bottom-4 right-4 w-32 h-32 bg-violet-200/30 dark:bg-gray-600/20 rounded-full blur-2xl"></div>
       </div>
     ),
     className: "lg:row-start-2 lg:row-end-3 lg:col-start-3 lg:col-end-4",
