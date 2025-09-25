@@ -173,3 +173,37 @@ pnpm-lock.yaml
 test-results/
 playwright-report/
 playwright/.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Backend API files with secrets (DO NOT COMMIT)
+diagnose_api.py
+main.py
+test_api_key.py
+start_backend.py
+setup_env.bat
+*.pyc
+QUICK_SETUP_GUIDE.md
+SETUP_INSTRUCTIONS.md
