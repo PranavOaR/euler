@@ -163,3 +163,4 @@ export default function MLPredictionChart({ prediction, inputs }: MLPredictionCh
     </motion.div>
   )
 }
+

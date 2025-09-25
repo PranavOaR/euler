@@ -382,3 +382,4 @@ export const getRandomStockSymbols = (): string[] => {
 export const generateMockTradeId = (): string => {
   return `TXN${Date.now()}${Math.random().toString(36).substr(2, 4).toUpperCase()}`
 }
+
